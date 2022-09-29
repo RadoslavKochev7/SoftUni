@@ -1,2 +1,2 @@
 # SoftUni
-That's the final exam from SoftUni course "DB-Advanced-Entity Framework Core".
+Stuff from SoftUni courses.
