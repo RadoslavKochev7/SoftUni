@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using static Watchlist.Data.GlobalConstants.UserConstants;
 
 namespace Watchlist.Models
 {

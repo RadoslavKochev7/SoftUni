@@ -18,7 +18,7 @@ namespace Watchlist.Controllers
             this.signInManager = signInManager;
         }
 
-
+        
         [HttpGet]
         [AllowAnonymous]
         public IActionResult Register()
@@ -40,17 +40,17 @@ namespace Watchlist.Controllers
             {
                 return View(registerViewModel);
             }
-
+            
             var user = new User()
             {
                 Email = registerViewModel.Email,
                 UserName = registerViewModel.UserName
             };
-
             var result = await userManager.CreateAsync(user, registerViewModel.Password);
 
             if (result.Succeeded)
             {
+                user.LockoutEnabled = true;
                 return RedirectToAction("Login", "User");
             }
 
@@ -83,12 +83,11 @@ namespace Watchlist.Controllers
             {
                 return View(loginViewModel);
             }
-
             var user = await userManager.FindByNameAsync(loginViewModel.Username);
 
             if (user != null)
             {
-                var result = await signInManager.PasswordSignInAsync(user, loginViewModel.Password, false, false);
+                var result = await signInManager.PasswordSignInAsync(user, loginViewModel.Password, false, true);
 
                 if (result.Succeeded)
                 {

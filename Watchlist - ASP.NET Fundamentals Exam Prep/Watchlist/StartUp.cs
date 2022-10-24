@@ -16,6 +16,7 @@ builder.Services.AddDefaultIdentity<User>(options =>
     options.SignIn.RequireConfirmedAccount = false;
     options.Password.RequiredLength = 5;
     options.Password.RequireNonAlphanumeric = false;
+    options.Lockout.MaxFailedAccessAttempts = 3;
 })
     .AddEntityFrameworkStores<WatchlistDbContext>();
 

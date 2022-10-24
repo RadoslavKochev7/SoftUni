@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rKOo5XX0oD762Oe5QxMy/hXa9Dnbg0w9+HvfMzAU8ZHZK4ZT7rmoWsJytT3hPs7C6xPa7wHyHV0WEnDEvkXVvA==",
+  "dgSpecHash": "l5rOZ0MN/o8D2v6jQDwz5YcXvgvNNBoF+1Jx80VZcW089Hcmj+IXXDD2pL8Y5Z+F/KvK1dRKbiXV0fh6lo4u8w==",
   "success": true,
-  "projectFilePath": "D:\\Users\\rkochev\\Downloads\\Watchlist_Skeleton_6.0\\Watchlist\\Watchlist.csproj",
+  "projectFilePath": "D:\\Users\\rkochev\\Git\\Watchlist - ASP.NET Fundamentals Exam Prep\\Watchlist\\Watchlist.csproj",
   "expectedPackageFiles": [
     "D:\\Users\\rkochev\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "D:\\Users\\rkochev\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

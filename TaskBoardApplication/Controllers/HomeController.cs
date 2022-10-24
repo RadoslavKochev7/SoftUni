@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 using TaskBoardApplication.Data;
+using TaskBoardApplication.Data.Entities;
 using TaskBoardApplication.Models;
 
 namespace TaskBoardApplication.Controllers
@@ -34,7 +35,7 @@ namespace TaskBoardApplication.Controllers
             }
 
             var userTaskCount = -1;
-
+            
             if (this.User.Identity.IsAuthenticated)
             {
                 var currentUserId = User.FindFirst(ClaimTypes.NameIdentifier).Value;

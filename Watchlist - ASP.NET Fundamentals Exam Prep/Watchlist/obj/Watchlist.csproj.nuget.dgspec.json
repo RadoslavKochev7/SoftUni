@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\rkochev\\Downloads\\Watchlist_Skeleton_6.0\\Watchlist\\Watchlist.csproj": {}
+    "D:\\Users\\rkochev\\Git\\Watchlist - ASP.NET Fundamentals Exam Prep\\Watchlist\\Watchlist.csproj": {}
   },
   "projects": {
-    "D:\\Users\\rkochev\\Downloads\\Watchlist_Skeleton_6.0\\Watchlist\\Watchlist.csproj": {
+    "D:\\Users\\rkochev\\Git\\Watchlist - ASP.NET Fundamentals Exam Prep\\Watchlist\\Watchlist.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\rkochev\\Downloads\\Watchlist_Skeleton_6.0\\Watchlist\\Watchlist.csproj",
+        "projectUniqueName": "D:\\Users\\rkochev\\Git\\Watchlist - ASP.NET Fundamentals Exam Prep\\Watchlist\\Watchlist.csproj",
         "projectName": "Watchlist",
-        "projectPath": "D:\\Users\\rkochev\\Downloads\\Watchlist_Skeleton_6.0\\Watchlist\\Watchlist.csproj",
+        "projectPath": "D:\\Users\\rkochev\\Git\\Watchlist - ASP.NET Fundamentals Exam Prep\\Watchlist\\Watchlist.csproj",
         "packagesPath": "D:\\Users\\rkochev\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\rkochev\\Downloads\\Watchlist_Skeleton_6.0\\Watchlist\\obj\\",
+        "outputPath": "D:\\Users\\rkochev\\Git\\Watchlist - ASP.NET Fundamentals Exam Prep\\Watchlist\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "D:\\Users\\rkochev\\AppData\\Roaming\\NuGet\\NuGet.Config",

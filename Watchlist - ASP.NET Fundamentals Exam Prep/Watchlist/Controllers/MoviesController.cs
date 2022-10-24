@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 using Watchlist.Contracts;
@@ -76,7 +77,7 @@ namespace Watchlist.Controllers
         public async Task<IActionResult> Watched()
         {
             var userId = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
-            var model = await movieService.GetWatchedMoviesAsync(userId);
+            var model = await movieService.GetWatchedMoviesAsync(userId!);
 
             return View("Mine", model);
         }
@@ -84,7 +85,7 @@ namespace Watchlist.Controllers
         public async Task<IActionResult> RemoveFromCollection(int movieId)
         {
             var userId = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
-            await movieService.RemoveFromCollectionAsync(movieId, userId);
+            await movieService.RemoveFromCollectionAsync(movieId, userId!);
 
             return RedirectToAction(nameof(Watched));
         }
